@@ -1,0 +1,55 @@
+{
+    "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.7/MicrosoftTeams.schema.json",
+    "manifestVersion": "1.7",
+    "version": "1.0.4",
+    "id": "21791bc8-af89-4ecb-bdbf-25b698004ac0",
+    "packageName": "conversationalbot",
+    "developer": {
+        "name": "KTA Solutions",
+        "websiteUrl": "https://www.ktasolutions.co.za",
+        "privacyUrl": "https://www.ktasolutions.co.za/privacy",
+        "termsOfUseUrl": "https://www.ktasolutions.co.za/termsofuse"
+    },
+    "icons": {
+        "color": "icon-color.png",
+        "outline": "icon-outline.png"
+    },
+    "name": {
+        "short": "Conversational Bot",
+        "full": "Conversational Bot for Notification and Alerting"
+    },
+    "description": {
+        "short": "A bot that gives detailed notifications",
+        "full": "A bot that will participate in threaded conversations consisting of updates on the status a remote service"
+    },
+    "accentColor": "#FFFFFF",
+    "bots": [
+        {
+            "botId": "21791bc8-af89-4ecb-bdbf-25b698004ac0",
+            "scopes": [
+                "personal",
+                "team"
+            ],
+            "commandLists": [
+                {
+                    "scopes": [
+                        "personal"
+                    ],
+                    "commands": [
+                        {
+                            "title": "MentionMe",
+                            "description": "Sends message with @mention of the sender"
+                        }
+                    ]
+                }
+            ],
+            "supportsFiles": false,
+            "isNotificationOnly": false
+        }
+    ],
+    "permissions": [
+        "identity",
+        "messageTeamMembers"
+    ],
+    "validDomains": []
+}
